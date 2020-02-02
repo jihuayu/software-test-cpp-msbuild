@@ -17,4 +17,4 @@ jobs:
     - run: | 
         cd $env:base
         msbuild /p:Configuration=Release
-        ./x64/Release/$env:run
+        "./x64/Release/$env:run"
