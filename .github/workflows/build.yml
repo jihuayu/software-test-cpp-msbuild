@@ -15,6 +15,6 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
 
     - run: | 
-        cd %env:base
+        cd $env:base
         msbuild /p:Configuration=Release
-        ./x64/Release/%env:run
+        ./x64/Release/$env:run
